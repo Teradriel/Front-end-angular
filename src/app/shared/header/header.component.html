@@ -1,1 +1,76 @@
-<p>header works!</p>
+<header class="header">
+  <input type="checkbox" id="mobile-menu" class="mobile-menu" />
+  <label for="mobile-menu">
+    <svg>
+      <use xlink:href="assets/images/symbols.svg#bar"></use>
+    </svg>
+    <svg>
+      <use xlink:href="assets/images/symbols.svg#bar"></use>
+    </svg>
+    <svg>
+      <use xlink:href="assets/images/symbols.svg#bar"></use>
+    </svg>
+  </label>
+  <div class="topbar">
+    <h1 class="logo">
+      <a routerLink="home">Luca Terzariol</a>
+    </h1>
+    <nav class="navigation">
+      <ul class="menu">
+        <li routerLinkActive="active" class="menu__item">
+          <a routerLink="home" class="menu__link">Inicio</a>
+        </li>
+        <!-- <li class="menu__item"> 
+          <a href="portfolio.html" class="menu__link">Portfolio</a>
+        </li>
+        <li class="menu__item">
+          <a href="blog.html" class="menu__link">Blog</a>
+        </li>
+        <li class="menu__item">
+          <a href="#0" class="menu__link">Importantísimo</a>
+          <nav class="menu__sub">
+            <ul class="container">
+              <li class="menu__item">
+                <a routerLink="about" class="menu__link"
+                  >Sobre este proyecto</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="documentation.html" class="menu__link"
+                  >Documentos</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="design-styles.html" class="menu__link">Estilos</a>
+              </li>
+            </ul>
+          </nav>
+        </li>-->
+        <li routerLinkActive="active" class="menu__item">
+          <a routerLink="about" class="menu__link">Sobre este proyecto</a>
+        </li>
+        <li routerLinkActive="active" class="menu__item">
+          <a routerLink="contact" class="menu__link">Contactame</a>
+        </li>
+        <li routerLinkActive="active" class="menu__item">
+          <a routerLink="contact" class="menu__link">Log In</a>
+        </li>
+      </ul>
+      <div class="search">
+        <input
+          type="text"
+          (keyup.enter)="buscarProducto(txtSearch.value)"
+          placeholder="Buscar"
+          id="urku-search"
+          #txtSearch
+          class="search-field"
+        />
+        <label for="urku-search">
+          <svg>
+            <use xlink:href="assets/images/symbols.svg#icon-search"></use>
+          </svg>
+        </label>
+      </div>
+    </nav>
+  </div>
+</header>
