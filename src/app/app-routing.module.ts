@@ -10,7 +10,7 @@ const routes: Routes = [
   //{ path: 'search/:termino', component: },
   //{ path: 'contact', component:  },
   { path: 'cv', component: CvComponent },
-  { path: '**', redirectTo: 'home' },
+  { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
 
 @NgModule({

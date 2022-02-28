@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header container--full">
   <input type="checkbox" id="mobile-menu" class="mobile-menu" />
   <label for="mobile-menu">
     <svg>
@@ -20,40 +20,33 @@
         <li routerLinkActive="active" class="menu__item">
           <a routerLink="home" class="menu__link">Inicio</a>
         </li>
-        <!-- <li class="menu__item"> 
-          <a href="portfolio.html" class="menu__link">Portfolio</a>
+        <li routerLinkActive="active" class="menu__item">
+          <a routerLink="portfolio" class="menu__link">Portfolio</a>
         </li>
         <li class="menu__item">
-          <a href="blog.html" class="menu__link">Blog</a>
+          <a routerLink="blog" class="menu__link">Blog</a>
         </li>
         <li class="menu__item">
           <a href="#0" class="menu__link">Importantísimo</a>
           <nav class="menu__sub">
-            <ul class="container">
+            <ul class="container-menu">
               <li class="menu__item">
-                <a routerLink="about" class="menu__link"
-                  >Sobre este proyecto</a
-                >
+                <a routerLink="about" class="menu__link">Sobre este proyecto</a>
               </li>
               <li class="menu__item">
-                <a href="documentation.html" class="menu__link"
-                  >Documentos</a
-                >
+                <a routerLink="docs" class="menu__link">Documentos</a>
               </li>
               <li class="menu__item">
-                <a href="design-styles.html" class="menu__link">Estilos</a>
+                <a routerLink="cv" class="menu__link">Curriculum Vitae</a>
               </li>
             </ul>
           </nav>
-        </li>-->
-        <li routerLinkActive="active" class="menu__item">
-          <a routerLink="about" class="menu__link">Sobre este proyecto</a>
         </li>
         <li routerLinkActive="active" class="menu__item">
           <a routerLink="contact" class="menu__link">Contactame</a>
         </li>
         <li routerLinkActive="active" class="menu__item">
-          <a routerLink="contact" class="menu__link">Log In</a>
+          <a routerLink="s" class="menu__link">Log In</a>
         </li>
       </ul>
       <div class="search">
@@ -61,11 +54,11 @@
           type="text"
           (keyup.enter)="buscarProducto(txtSearch.value)"
           placeholder="Buscar"
-          id="urku-search"
+          id="search-navbar"
           #txtSearch
           class="search-field"
         />
-        <label for="urku-search">
+        <label for="search-navbar">
           <svg>
             <use xlink:href="assets/images/symbols.svg#icon-search"></use>
           </svg>
