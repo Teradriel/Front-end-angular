@@ -8,6 +8,11 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { CvComponent } from './pages/cv/cv.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { AboutComponent } from './pages/about/about.component';
+import { DocsComponent } from './pages/docs/docs.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +21,11 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
     CvComponent,
     HeaderComponent,
     PortfolioComponent,
+    HomeComponent,
+    ContactComponent,
+    AboutComponent,
+    DocsComponent,
+    LoginComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
