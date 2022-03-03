@@ -1,66 +1,25 @@
-<header class="header container--full">
-  <input type="checkbox" id="mobile-menu" class="mobile-menu" />
-  <label for="mobile-menu">
-    <svg>
-      <use xlink:href="assets/images/symbols.svg#bar"></use>
-    </svg>
-    <svg>
-      <use xlink:href="assets/images/symbols.svg#bar"></use>
-    </svg>
-    <svg>
-      <use xlink:href="assets/images/symbols.svg#bar"></use>
-    </svg>
-  </label>
-  <div class="topbar">
-    <h1 class="logo">
-      <a routerLink="home">Luca Terzariol</a>
-    </h1>
-    <nav class="navigation">
-      <ul class="menu">
-        <li routerLinkActive="active" class="menu__item">
-          <a routerLink="home" class="menu__link">Inicio</a>
-        </li>
-        <li routerLinkActive="active" class="menu__item">
-          <a routerLink="portfolio" class="menu__link">Portfolio</a>
-        </li>
-        <li class="menu__item">
-          <a href="#0" class="menu__link">Importantísimo</a>
-          <nav class="menu__sub">
-            <ul class="container-menu">
-              <li class="menu__item">
-                <a routerLink="about" class="menu__link">Sobre este proyecto</a>
-              </li>
-              <li class="menu__item">
-                <a routerLink="docs" class="menu__link">Documentos</a>
-              </li>
-              <li class="menu__item">
-                <a routerLink="cv" class="menu__link">Curriculum Vitae</a>
-              </li>
-            </ul>
-          </nav>
-        </li>
-        <li routerLinkActive="active" class="menu__item">
-          <a routerLink="contact" class="menu__link">Contactame</a>
-        </li>
-        <li routerLinkActive="active" class="menu__item">
-          <a routerLink="login" class="menu__link">Log In</a>
-        </li>
-      </ul>
-      <div class="search">
-        <input
-          type="text"
-          (keyup.enter)="buscarProducto(txtSearch.value)"
-          placeholder="Buscar"
-          id="search-navbar"
-          #txtSearch
-          class="search-field"
-        />
-        <label for="search-navbar">
-          <svg>
-            <use xlink:href="assets/images/symbols.svg#icon-search"></use>
-          </svg>
-        </label>
-      </div>
-    </nav>
+<nav class="nav">
+  <input type="checkbox" class="nav__cb" id="menu-cb" />
+  <div class="nav__content">
+    <ul class="nav__items">
+      <li class="nav__item">
+        <span routerLink="home" class="nav__item-text"> Inicio </span>
+      </li>
+      <li class="nav__item">
+        <span routerLink="about" class="nav__item-text">
+          Sobre este proyecto
+        </span>
+      </li>
+      <li class="nav__item">
+        <span routerLink="cv" class="nav__item-text"> Curriculum </span>
+      </li>
+      <li class="nav__item">
+        <span routerLink="contact" class="nav__item-text"> Contactame </span>
+      </li>
+      <li class="nav__item">
+        <span routerLink="login" class="nav__item-text"> Login </span>
+      </li>
+    </ul>
   </div>
-</header>
+  <label class="nav__btn" for="menu-cb"></label>
+</nav>

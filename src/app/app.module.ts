@@ -11,7 +11,6 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
-import { DocsComponent } from './pages/docs/docs.component';
 import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
@@ -24,7 +23,6 @@ import { LoginComponent } from './pages/login/login.component';
     HomeComponent,
     ContactComponent,
     AboutComponent,
-    DocsComponent,
     LoginComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],

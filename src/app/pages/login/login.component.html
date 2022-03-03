@@ -1,34 +1,39 @@
-<div class="wrapper">
-  <form class="form-signin">
-    <h2 class="form-signin-heading">Ingresar</h2>
-    <input
-      type="text"
-      class="form-control"
-      name="username"
-      placeholder="Usuario / E-mail"
-      required=""
-      autofocus=""
-    />
-    <input
-      type="password"
-      class="form-control"
-      name="password"
-      placeholder="Contraseña"
-      required=""
-    />
-    <label class="checkbox">
+<div class="container">
+  <form id="login" action="" method="post">
+    <h3>Ingresar</h3>
+    <fieldset>
       <input
-        type="checkbox"
-        value="remember-me"
-        id="rememberMe"
-        name="rememberMe"
+        placeholder="Usuario"
+        type="text"
+        tabindex="1"
+        required
+        autofocus
       />
-      Recordarme
-    </label>
-    <div class="button-pos">
-      <button class="btn btn-lg btn-primary btn-block" type="submit">
-        Login
+    </fieldset>
+    <fieldset>
+      <input placeholder="Contraseña" type="password" tabindex="2" required />
+    </fieldset>
+    <fieldset>
+      <label class="checkbox">
+        <input
+          type="checkbox"
+          value="remember-me"
+          id="rememberMe"
+          name="rememberMe"
+        />
+        Recordarme
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <button
+        name="submit"
+        type="submit"
+        id="login-submit"
+        data-submit="...Sending"
+      >
+        Ingresar
       </button>
-    </div>
+    </fieldset>
   </form>
 </div>
