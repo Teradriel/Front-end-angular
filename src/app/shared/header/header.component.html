@@ -1,25 +1,40 @@
-<nav class="nav">
-  <input type="checkbox" class="nav__cb" id="menu-cb" />
-  <div class="nav__content">
-    <ul class="nav__items">
-      <li class="nav__item">
-        <span routerLink="home" class="nav__item-text"> Inicio </span>
-      </li>
-      <li class="nav__item">
-        <span routerLink="about" class="nav__item-text">
-          Sobre este proyecto
-        </span>
-      </li>
-      <li class="nav__item">
-        <span routerLink="cv" class="nav__item-text"> Curriculum </span>
-      </li>
-      <li class="nav__item">
-        <span routerLink="contact" class="nav__item-text"> Contactame </span>
-      </li>
-      <li class="nav__item">
-        <span routerLink="login" class="nav__item-text"> Login </span>
-      </li>
-    </ul>
-  </div>
-  <label class="nav__btn" for="menu-cb"></label>
-</nav>
+<ul
+  ngbNav
+  #nav="ngbNav"
+  [activeId]="-1"
+  class="nav-pills justify-content-center"
+>
+  <li [ngbNavItem]="1">
+    <a routerLink="home" ngbNavLink>Inicio</a>
+  </li>
+  <li [ngbNavItem]="2">
+    <a routerLink="about" ngbNavLink>Sobre este proyecto</a>
+  </li>
+  <li [ngbNavItem]="3">
+    <a routerLink="contact" ngbNavLink>Contactame</a>
+  </li>
+  <li [ngbNavItem]="4">
+    <a routerLink="login" ngbNavLink>Log-in</a>
+  </li>
+  <li [ngbNavItem]="5">
+    <a routerLink="cv" ngbNavLink>Mi curriculum</a>
+  </li>
+  <li ngbDropdown class="nav-item">
+    <a href (click)="(false)" class="nav-link" ngbDropdownToggle>Más</a>
+    <div ngbDropdownMenu>
+      <button ngbDropdownItem>
+        <a target="_blank" href="https://github.com/Teradriel"
+          ><i class="fab fa-github" aria-hidden="true"></i> Git-hub</a
+        >
+      </button>
+      <div class="dropdown-divider"></div>
+      <button ngbDropdownItem>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/luca-terzariol-63711239"
+          ><i class="fab fa-linkedin" aria-hidden="true"></i> Linked-In</a
+        >
+      </button>
+    </div>
+  </li>
+</ul>
