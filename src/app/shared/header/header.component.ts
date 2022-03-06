@@ -10,13 +10,4 @@ export class HeaderComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
-
-  /* buscarProducto(termino: string) {
-    if (termino.length < 1) {
-      return;
-    }
-    this.router.navigate(['/search', termino]);
-
-    console.log(termino);
-  } */
 }
