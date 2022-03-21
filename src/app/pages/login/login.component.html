@@ -1,5 +1,5 @@
 <div class="container">
-  <form id="login" action="" method="post">
+  <form id="login" action="" method="POST">
     <h3>Ingresar</h3>
     <fieldset>
       <input
@@ -35,7 +35,65 @@
       </button>
     </fieldset>
   </form>
-  <div class="container">
-    <a href="">No tenés una cuenta? Creala gratis!</a>
-  </div>
+  <ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Crear cuenta</h4>
+      <button
+        type="button"
+        class="btn-close"
+        aria-label="Close"
+        (click)="modal.dismiss('Cross click')"
+      ></button>
+    </div>
+    <div class="modal-body">
+      <form id="crear_cuenta" action="" method="POST">
+        <div class="mb-3">
+          <div class="input-group">
+            <label for="usuario">
+              <input
+                id="usuario"
+                class="form-control"
+                placeholder="Usuario"
+                name="usuario"
+                type="text"
+                required
+            /></label>
+            <label for="pass"
+              ><input
+                type="password"
+                class="form-control"
+                name="pass"
+                id="password"
+                required
+                placeholder="Ingresá tu contraseña"
+            /></label>
+            <label for="pass2"
+              ><input
+                type="password"
+                class="form-control"
+                name="pass2"
+                id="password"
+                required
+                placeholder="Repetí la contraseña"
+            /></label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button
+        type="submit"
+        class="btn"
+        id="crear_cuenta"
+        (click)="modal.close('Save click')"
+      >
+        Crear
+      </button>
+    </div>
+  </ng-template>
+  <fieldset>
+    <button class="btn" (click)="open(content)" name="crear">
+      Crear tu cuenta gratis!
+    </button>
+  </fieldset>
 </div>
