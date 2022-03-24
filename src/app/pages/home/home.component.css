@@ -97,6 +97,7 @@
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-div img {
+div.row.featurette {
   align-items: center;
+  justify-items: center;
 }
